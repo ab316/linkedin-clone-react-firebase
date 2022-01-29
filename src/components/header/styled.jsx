@@ -129,3 +129,20 @@ export const NavList = styled.li`
     }
   }
 `;
+
+export const User = styled(NavList)`
+  a > img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+  }
+`;
+
+export const Work = styled(User)`
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+`;

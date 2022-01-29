@@ -7,6 +7,8 @@ import {
   NavListWrap,
   Search,
   SearchIcon,
+  User,
+  Work,
 } from './styled';
 
 function Header() {
@@ -53,6 +55,24 @@ function Header() {
                 </a>
               </NavList>
             ))}
+
+            <User>
+              <a href="#">
+                <img src="images/user.svg" alt="Profile" />
+                <span>
+                  Me <img src="/images/down-icon.svg" alt="Down" />
+                </span>
+              </a>
+            </User>
+
+            <Work>
+              <a href="#">
+                <img src="/images/nav-work.svg" alt="Work" />
+                <span>
+                  Work <img src="/images/down-icon.svg" alt="Down" />
+                </span>
+              </a>
+            </Work>
           </NavListWrap>
         </Nav>
       </Content>
