@@ -1,6 +1,9 @@
 import React from 'react';
 import Header from '../../components/header/Header';
-import {Container, Section} from './styled';
+import LeftSide from '../../components/leftside/LeftSide';
+import Main from '../../components/main/Main';
+import RightSide from '../../components/rightside/RightSide';
+import {Container, Layout, Section} from './styled';
 
 function Home() {
   return (
@@ -16,6 +19,12 @@ function Home() {
             moving.
           </p>
         </Section>
+
+        <Layout>
+          <LeftSide />
+          <Main />
+          <RightSide />
+        </Layout>
       </Container>
     </>
   );
