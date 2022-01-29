@@ -106,6 +106,7 @@ export const NavList = styled.li`
     font-weight: 400;
     line-height: 1.5;
     background: transparent;
+    cursor: pointer;
 
     span {
       color: rgba(0, 0, 0, 0.6);
@@ -130,6 +131,23 @@ export const NavList = styled.li`
   }
 `;
 
+export const SignOut = styled.div`
+  position: absolute;
+  top: 45px;
+  background: white;
+  border-radius: 0 0 5px 5px;
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  transition-duration: 167ms;
+  text-align: center;
+  display: none;
+  a {
+    min-height: initial;
+    min-width: initial;
+  }
+`;
+
 export const User = styled(NavList)`
   a > img {
     width: 24px;
@@ -140,6 +158,14 @@ export const User = styled(NavList)`
   span {
     display: flex;
     align-items: center;
+  }
+
+  &:hover {
+    ${SignOut} {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 `;
 
