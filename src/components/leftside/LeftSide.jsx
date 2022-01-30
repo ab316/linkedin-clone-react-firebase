@@ -2,6 +2,7 @@ import {
   AddPhotoText,
   ArtCard,
   CardBackground,
+  CommunityCard,
   Container,
   Item,
   Link,
@@ -25,6 +26,7 @@ function LeftSide() {
             <AddPhotoText>Add a photo</AddPhotoText>
           </a>
         </UserInfo>
+
         <Widget>
           <a>
             <div>
@@ -41,6 +43,23 @@ function LeftSide() {
           </span>
         </Item>
       </ArtCard>
+
+      <CommunityCard>
+        <a>
+          <span>Groups</span>
+        </a>
+        <a>
+          <span>
+            Events <img src="/images/plus-icon.svg" alt="Plus" />
+          </span>
+        </a>
+        <a>
+          <span>Follow Hashtags</span>
+        </a>
+        <a>
+          <span>Discover more</span>
+        </a>
+      </CommunityCard>
     </Container>
   );
 }

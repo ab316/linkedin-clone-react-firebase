@@ -118,3 +118,41 @@ export const Item = styled.a`
     cursor: pointer;
   }
 `;
+
+export const CommunityCard = styled(ArtCard)`
+  padding: 8px 0 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    color: #000;
+    padding: 4px 12px;
+    font-size: 12px;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--linkedinBlueColor);
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &:last-child {
+      color: rgba(0, 0, 0, 0.6);
+      border-top: 1px solid #d6cec2;
+      padding: 12px;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+      }
+    }
+  }
+
+  a:last-child span {
+    justify-content: center;
+  }
+`;
